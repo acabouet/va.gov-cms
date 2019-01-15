@@ -23,7 +23,7 @@ function formatBasicAuth(userName, password) {
 
 
 function plugin() {
-    const siteUrl = "http://vagovcms.lndo.site/graphql";
+    const siteUrl = "http://dev.va.agile6.com/graphql";
     const creds = formatBasicAuth('admin', 'drupal8');
     const headers = {
         'Authorization': creds
