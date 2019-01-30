@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.page.field_page_last_built
     - field.field.node.page.field_plainlanguage_date
     - field.field.node.page.field_related_links
+    - field.field.node.page.field_sidebar_nav_item
     - node.type.page
   module:
     - content_moderation
@@ -147,6 +148,15 @@ content:
         collapse_edit_all: '0'
         add_above: '0'
     third_party_settings: {  }
+    region: content
+  field_sidebar_nav_item:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   moderation_state:
     type: moderation_state_default
